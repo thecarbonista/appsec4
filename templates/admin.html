@@ -1,0 +1,30 @@
+{%  extends "layout.html" %}
+{% block content %}
+        <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <div><h3></h3><b>Registered Users</b></div>
+            {% for user in users %}
+             <table>
+              <tr>
+                <th>ID</th>
+                <th>Username</th>
+                  <th>user.is_admin</th>
+              </tr>
+              <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.username }}</td>
+                  <td>{{ user.is_admin }}</td>
+              </tr>
+            </table>
+            {% endfor %} <p></p>
+            <p>
+                {{ form.username.label }}<br>
+                {{ form.username }}<br>
+                {% for error in form.username.errors %}
+                    <span style="color:red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
+
+{% endblock content %}

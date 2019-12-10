@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <p><h8>User ID: </h8><a id="user_id">{{ user_id }}</a></p>
+        <ul>
+        {% for history in histories %}
+            {% if history.user_id == user_id%}
+            <li><h8>Login#  </h8><a id="login{{ history.id }}">{{ history.id }}</a> <a id="login{{ history.id }}_time">{{ history.login_time }}</a></li>
+            <li><h8>Logout#  </h8><a id="logout{{ history.id }}">{{ history.id }}</a> <a id="logout{{ history.id }}_time">{{ history.logout_time }}</a></li></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+{% endblock content %}
+
+
+        <a id="query{{ post.id }}"

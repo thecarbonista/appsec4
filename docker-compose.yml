@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: docker.local:5000/appsec4_web
+    deploy:
+        mode: replicated
+        replicas: 4
+        resources:
+            limits:
+                cpus: '0.50'
+                memory: 50M
+            reservations:
+                cpus: '0.25'
+                memory: 20M
+    ports:
+      - "8080:8080"
+    environment:
+      FLASK_ENV: development

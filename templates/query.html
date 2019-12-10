@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+          <div class="media-body">
+              <h8>Query# </h8><a id="queryid">{{ post.id }}</a>
+              <p><h8>Username: </h8><a id="username">{{ post.author.username }}</a></p>
+              <p><h8>Submitted Text: </h8><a id="querytext">{{ post.content }}</a></p>
+              <p><h8>Results: </h8><p><a id="queryresults">{{ post.results }}</a></p></p>
+          </div>
+    {% endfor %}
+{% endblock content %}
+

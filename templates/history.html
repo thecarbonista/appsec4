@@ -1,0 +1,13 @@
+{%  extends "layout.html" %}
+{% block content %}
+    <p><h8>Username: </h8><a id="userquery">{{ userquery }}</a></p>
+    <p><h8>User ID: </h8><a id="user_id">{{ user_id }}</a></p>
+    <p><h8>Number of Queries: </h8><a id="numqueries"> {{ numqueries }}</a></p>
+    {% for post in posts %}
+        <a id="query{{ post.id }}" href="history/query{{post.id}}"}}>Query #{{ post.id }}</a><br>
+        <p class="article-content">{{ post.content }}</p>
+
+    {% endfor %}
+{% endblock content %}
+
+

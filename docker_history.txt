@@ -1,0 +1,30 @@
+IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+fbffe76da339        7 minutes ago       /bin/sh -c #(nop)  CMD ["flask" "run"]          0B                  
+d07d4a8eb62e        7 minutes ago       /bin/sh -c #(nop) COPY dir:00c47d793951655e3…   81.1kB              
+a76a86952908        7 minutes ago       /bin/sh -c pip3 install -r requirements.txt     0B                  
+24e88cc4c2d2        7 minutes ago       /bin/sh -c #(nop) WORKDIR /tmp                  0B                  
+80d245143b8b        7 minutes ago       /bin/sh -c #(nop) COPY file:86d2ff7a32e1b5f9…   336B                
+de0e02c87f69        7 minutes ago       /bin/sh -c apk --update add --virtual build-…   42.9MB              
+84e88c7e8c75        8 minutes ago       /bin/sh -c apk --update add python py-pip op…   1.78MB              
+03676b07cf3b        8 minutes ago       /bin/sh -c #(nop) WORKDIR /app                  0B                  
+cbea7f0be103        8 minutes ago       /bin/sh -c #(nop) ADD file:86d2ff7a32e1b5f9a…   336B                
+35a2b57ce166        29 minutes ago      /bin/sh -c mkdir /app                           0B                  
+0a8a9cdede04        29 minutes ago      /bin/sh -c apk --update add python py-pip op…   55.3MB              
+2bb6482cf6de        29 minutes ago      /bin/sh -c #(nop)  ENV FLASK_RUN_PORT=8080      0B                  
+13792424a35b        40 minutes ago      /bin/sh -c #(nop)  ENV FLASK_RUN_HOST=0.0.0.0   0B                  
+4aa4c1d016a4        10 hours ago        /bin/sh -c #(nop)  ENV FLASK_APP=app.py         0B                  
+02b3ab3c11ca        10 hours ago        /bin/sh -c #(nop) WORKDIR /appsec4              0B                  
+8922d588eec6        2 weeks ago         /bin/sh -c #(nop)  CMD ["python3"]              0B                  
+<missing>           2 weeks ago         /bin/sh -c set -ex;   wget -O get-pip.py "$P…   6.25MB              
+<missing>           2 weeks ago         /bin/sh -c #(nop)  ENV PYTHON_GET_PIP_SHA256…   0B                  
+<missing>           2 weeks ago         /bin/sh -c #(nop)  ENV PYTHON_GET_PIP_URL=ht…   0B                  
+<missing>           2 weeks ago         /bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=19…   0B                  
+<missing>           2 weeks ago         /bin/sh -c cd /usr/local/bin  && ln -s idle3…   32B                 
+<missing>           2 weeks ago         /bin/sh -c set -ex  && apk add --no-cache --…   86.1MB              
+<missing>           5 weeks ago         /bin/sh -c #(nop)  ENV PYTHON_VERSION=3.7.5     0B                  
+<missing>           5 weeks ago         /bin/sh -c #(nop)  ENV GPG_KEY=0D96DF4D4110E…   0B                  
+<missing>           5 weeks ago         /bin/sh -c apk add --no-cache ca-certificates   551kB               
+<missing>           5 weeks ago         /bin/sh -c #(nop)  ENV LANG=C.UTF-8             0B                  
+<missing>           5 weeks ago         /bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/…   0B                  
+<missing>           5 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/sh"]              0B                  
+<missing>           5 weeks ago         /bin/sh -c #(nop) ADD file:fe1f09249227e2da2…   5.55MB              
